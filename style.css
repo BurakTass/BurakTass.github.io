@@ -31,7 +31,7 @@
   --radius-20: 20px;
 
 
-  --fs-1: 6.4rem; 
+  --fs-1: 6.4rem;
   --fs-2: 3.5rem; /* yazı boyutu */
   --fs-3: 3.6rem;
   --section-padding: 80px;
@@ -51,7 +51,7 @@
 *,
 *::before,
 *::after {/*sayfa kenarlarını ayarlar */
-  margin: 0; 
+  margin: 0;
   padding: 0;
 }
 
@@ -88,13 +88,13 @@ textarea {
 
 
 input, /* iletişim kısmı form genişliği */
-textarea { width: 100%; } 
+textarea { width: 100%; }
 
 
 html {
   font-size: 10px;
   font-family: var(--ff-open-sans);
-  scroll-behavior: smooth;  /* kayma efekti */ 
+  scroll-behavior: smooth;  /* kayma efekti */
 
 }
 
@@ -114,10 +114,9 @@ body {
   color: var(--beyaz);
   font-family: var(--ff-barlow);
   font-size: var(--fs-5);
-  font-weight: var(--fw-600);
   max-width: max-content;
   padding: var(--padding, 10px 40px);
-  border-radius: 50px;  
+  border-radius: 50px;
   transition: var(--transition-2);
 }
 
@@ -136,14 +135,12 @@ body {
 .section-subtitle { /* becerilerim */
   color: var(--turuncu);
   font-family: var(--ff-barlow);
-  font-size: var(--fs-4);
 }
 
 .h2,
 .h3 { /* yeteneklrimi yenilemek */
   color: var(--beyaz);
   font-family: var(--ff-barlow);
-  font-weight: var(--fw-600);
   line-height: 1.3;
 }
 
@@ -223,7 +220,7 @@ body {
 .rotate-img { display: none; }
 
 .hero {
-  background-image: url("../images/hero-bg.jpg");
+  background-image: url("hero-bg.jpg");
   min-height: 100vh;  /* anasayfa ekran boyutunu ayarlar vh ise her ekranda bu boyutun degismemesini saglar*/
   display: grid; /* kullanılan resimlerin duzenli yerlesimini saglar*/
 
@@ -236,7 +233,6 @@ body {
 .hero-title { /*selam paragrafını kapsar*/
   font-family: var(--ff-barlow);/* yazı tipi*/
   font-size: var(--fs-5);
-  font-weight: var(--fw-600);
   line-height: 1.3; /* satır arası bosluk*/
 }
 
@@ -255,12 +251,12 @@ body {
 
 
 /*  HAKKIMDA  */
-.about .section-subtitle { margin-block-end: 3-20px; }
+.about .section-subtitle { margin-block-end: 20px; }
 
 .about .section-title { margin-block-end: 20px; }
 
 .about .section-text { margin-block-end: 60px; }
-.about-banner > .img-cover { border-radius: inherit; } 
+.about-banner > .img-cover { border-radius: inherit; }
 
 .about :is(.section-title, .section-subtitle, .section-text) { text-align: left; }
 
@@ -287,7 +283,6 @@ body {
   border-radius: var(--radius-20);
   font-family: var(--ff-barlow);
   color: var(--beyaz);
-  font-weight: var(--fw-600);
   transition: var(--transition-2);
 }
 
@@ -307,7 +302,6 @@ body {
   display: flex;
   align-items: center;
   gap: 5px;
-  font-size: var(--fs-6);
   text-transform: uppercase;
 }
 
@@ -332,7 +326,6 @@ body {
   color: var(--beyaz);/* c,python verilerinin rengi*/
   font-size: var(--fs-5);
   font-family: var(--ff-barlow);
-  font-weight: var(--fw-600);
 }
 
 .skills-progress-box { /* cizgiyi ayarlar*/
@@ -360,8 +353,7 @@ body {
 .iletisim-card .card-subtitle {/* "cekinmeyiniz" kısmı */
   color: var(--turuncu);
   font-family: var(--ff-barlow); /* yazı tipi */
-  font-size: 10;
-  font-weight: var(--fw-1600);
+  font-size: 13px;
 }
 
 .iletisim .section-title {
@@ -396,7 +388,7 @@ textarea.iletisim-input {
   width: 100%;
   padding: 10px; /* "gonder" butonunun ust ve alt sınırlara olan uzaklıgı" */
   border-radius: var(--radius-5);
-  transition: var(--transition-2); /* buton renginin gecis ozelligi */  
+  transition: var(--transition-2); /* buton renginin gecis ozelligi */
 }
 
 .buton-submit:is(:hover, :focus) {/* buton degistigindeki ozellikler */
@@ -424,8 +416,7 @@ textarea.iletisim-input {
 .iletisim-item-title {
   color: var(--beyaz);
   font-family: var(--ff-barlow);
-  font-size: var(--fs-4);
-  font-weight: var(--fw-600);
+
 }
 
 .iletisim-item-link { transition: var(--transition-1); }/* link renginii degistirir*/
@@ -438,7 +429,7 @@ textarea.iletisim-input {
 
 /*  #BLOG  */
 
-.blog .section-subtitle { margin-block-end: 3-20px; }
+.blog .section-subtitle { margin-block-end: 20px; }
 
 .blog .section-title { margin-block-end: 20px; }
 
@@ -460,7 +451,7 @@ textarea.iletisim-input {
 
 .blog-card .card-banner a:is(:hover, :focus) img { transform: scale(1.1); }/*ekranı buyutmeyi saglar. */
 
-.blog-card .card-banner:focus-within { /*etrafını sarı cizgi ile kaplar haberin */ 
+.blog-card .card-banner:focus-within { /*etrafını sarı cizgi ile kaplar haberin */
   outline: 2px solid var(--acik_sari);
   outline-offset: 4px; /* resim ile cizginin uzaklıgını belirler. */
 }
@@ -473,7 +464,6 @@ textarea.iletisim-input {
 
 .blog-card .card-title {/* haber alt başlık bilgisi */
   color: var(--beyaz);
-  font-weight: var(--fw-600);
   line-height: 1.1;
 }
 
@@ -501,7 +491,6 @@ textarea.iletisim-input {
 .copyright-link { /* tasacademy linkini ayarlar */
   display: inline-block; /* satıırları birlestirerek yazar. */
   transition: var(--transition-2);
-  font-weight: var(--fw-600);
 }
 
 .copyright-link:is(:hover, :focus) { color: var(--beyaz); }
@@ -595,7 +584,7 @@ textarea.iletisim-input {
 
   .header,
   .header.nav-active {
-    background-color: transparent;
+    background-color: #04163e;
     box-shadow: none;
     height: unset;
     padding-block: 30px;
@@ -622,7 +611,7 @@ textarea.iletisim-input {
 
 
 
-  
+
    /* HERO     ilk sayfanın şeklini ayarlar. */
 
   .hero .container {
@@ -665,7 +654,7 @@ textarea.iletisim-input {
     padding: 20px;
   }
 
-  
+
 
 
   .elem-2 {
@@ -678,16 +667,15 @@ textarea.iletisim-input {
   .elem-title { /* kac proje tamamladın kısmı */
     font-size: 4.5rem;
     line-height: 1.1;
-  }                     
+  }
 
   .elem-text {/* proje completed kısmı */
     max-width: 10ch;
     color: var(--siyah);
-    font-weight: var(--fw-700);
     line-height: 1.1;
   }
 
-  
+
    /* Hakkımda */
 
   .about { padding-block: 180px; }
@@ -739,7 +727,7 @@ textarea.iletisim-input {
 
 
 
-  
+
    /* İletisim */
 
   .iletisim-card { padding: 100px; }
@@ -768,9 +756,9 @@ textarea.iletisim-input {
     gap: 50px;
   }
 
-  
 
-  
+
+
    /*  EN ALT BÖLÜM */
 
   .footer .container {
@@ -779,4 +767,4 @@ textarea.iletisim-input {
   }
 
   .copyright,
-  .footer-list { margin-inline: 0; }  
+  .footer-list { margin-inline: 0; }

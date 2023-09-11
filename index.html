@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <title>BURAK TAŞ - Websitem</title>
 
   <!-- favicon (websitesinin kücük bir simgesi) -->
   <link rel="shortcut icon" href="https://raw.githubusercontent.com/BurakTass/porfolio/main/soc2-removebg-preview.ico" type="image/x-icon">
-  
+
   <!--  css linki  -->
   <link rel="stylesheet" href="style.css">
 
@@ -24,9 +24,7 @@
 
 <body id="basla">
 
-  <!--  Header  -->
-
-  <header class="header" data-header>
+  <header class="header">
     <div class="container">
 
       <a href="#">
@@ -66,7 +64,7 @@
           </li>
 
           <li>
-            <a href="#" class="btn btn-primary blue">CV indir</a>
+            <a onclick="indirPDF()" class="btn btn-primary blue">CV indir</a>
           </li>
 
         </ul>
@@ -92,7 +90,7 @@
             <img src="webfoto.jpg" width="800" height="864" loading="lazy" alt="Burak's Photo"
               class="img-cover">
 
-            
+
 
             <div class="elem elem-2">
               <p class="elem-title">2</p>
@@ -101,38 +99,48 @@
             </div>
 
           </div>
-          
+
           <div class="hero-content">
 
             <h2 class="hero-title">
               <span>Selam</span>
-              <strong>Ben Burak Taş</strong> Marmara Üniversitesi Bilgisayartoken : "456456465" Mühendisi
+              <strong>Ben Burak Taş</strong>
             </h2>
 
             <p class="hero-text">
-              Socradar'da staj yapan api key : "12114564641211456464121145646412" zamanda Marmara Üniversitesi'nde 'token':'ahsjdhkj' access_token: 1ad64a okuyan; python, c, java programlama dillerinde tecrübesi olan ve Web programalama ögrenmeye çalışan biri.
+              Marmara Üniversitesi
+              Bilgisayar Mühendisliği 3. sınıf öğrencisiyim. Aldığım
+              okul eğitiminde kullandığım diller ve gördüğüm
+              dersler dışında web geliştirmeyle ilgileniyorum.
+              Bundan sonraki hayatımda ve işimde yazılımla
+              uğraşmak, yeni deneyimler ve bilgiler biriktirmek
+              istiyorum. Bu amaçla da çalışmayı hedefliyorum.
+              İleride çalışacağım şirketle birlikte hem öğrenmeyi
+              hem de öğrendiklerimi en faydalı şekilde sunmayı
+              arzuluyorum. Bu şekilde gelişmek ve çalışmak
+              temennimdir
             </p>
 
 
             <nav class="navbar container">
               <ul class="navbar-list">
-        
+
                 <li>
                   <a href="#iletisim" class="btn btn-primary blue">İletisime gec</a>
                 </li>
                 <li>
                   <a href="#hakkımda" class="navbar-link">Hakkımda</a>
                 </li>
-      
+
               </ul>
             </nav>
 
           </div>
-          
+
         </div>
       </section>
-      
-      
+
+
 
 
 
@@ -142,10 +150,10 @@
 
       <section class="section about" id="hakkımda">
         <div class="container">
-          
+
           <figure class="about-banner">
-            
-            <img src="webfoto1.jpg" width="800" height="652" loading="lazy" 
+
+            <img src="webfoto1.jpg" width="800" height="652" loading="lazy"
               class="img-cover">
 
             <img src="webfoto2.jpg" width="800" height="717" loading="lazy"
@@ -159,13 +167,13 @@
               <ion-icon name="logo-javascript"></ion-icon>
             </div>
 
-            
+
 
           </figure>
 
           <div class="about-content">
 
-            <p class="section-subtitle">Developer olmaya çalışıyorum</p>
+            <p class="section-subtitle">Front-end Back-end Developer</p>
 
             <h2 class="h2 section-title">Siber güvenlikte kullanılacak ürünler geliştirmeye çalışıyorum.</h2>
 
@@ -188,7 +196,7 @@
       <section class="section portfolio" id="portfolyo">
         <div class="container">
 
-          <p class="section-subtitle">Portfolyom access token : jflaksj</p>
+          <p class="section-subtitle">Portfolyom</p>
 
           <h2 class="h2 section-title">Çalışmalarım</h2>
 
@@ -199,17 +207,17 @@
           <ul class="portfolio-list">
 
             <li>
-              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-1.jpg')">
+              <a target="_blank" href="https://github.com/BurakTass?tab=projects&type=new" class="portfolio-card" style="background-image: url('cloud.jpeg')">
                 <div class="card-content">
 
-                  <p class="card-subtitle">Medium</p>
+                  <p class="card-subtitle">Github</p>
 
-                  <h3 class="h3 card-title">Siber Güvenlikte Yapay Zeka</h3>
+                  <h3 class="h3 card-title">Bulut Güvenliği</h3>
 
                   <span class="btn-link">
                     <span>Projeyi Ziyaret Et</span>
 
-                    <ion-icon name="arrow-forward"></ion-icon> 
+                    <ion-icon name="arrow-forward"></ion-icon>
                   </span>
 
                 </div>
@@ -233,85 +241,65 @@
           <h2 class="h2 section-title">Yeteneklerimi geliştirmek ve yenilendirmek istiyorum.</h2>
 
           <p class="section-text">
-            
+
           </p>
 
           <ul class="skills-list">
-
             <li class="skills-item">
               <div class="wrapper" style="width: 70%">
                 <h3 class=" skills-title">CSS</h3>
-
                 <data class="skills-data" value="70">%70</data>
               </div>
-
               <div class="skills-progress-box">
                 <div class="skills-progress" style="width: 70%"></div>
               </div>
             </li>
-
             <li class="skills-item">
               <div class="wrapper" style="width: 80%">
                 <h3 class="skills-title">Html</h3>
-
                 <data class="skills-data" value="80">%80</data>
               </div>
-
               <div class="skills-progress-box">
                 <div class="skills-progress" style="width: 80%"></div>
               </div>
             </li>
-
             <li class="skills-item">
               <div class="wrapper" style="width: 80%">
                 <h3 class="skills-title">python</h3>
-
                 <data class="skills-data" >%80</data>
               </div>
-
               <div class="skills-progress-box">
                 <div class="skills-progress" style="width: 80%"></div>
               </div>
             </li>
-
             <li class="skills-item">
               <div class="wrapper" style="width: 60%">
                 <h3 class="skills-title">java</h3>
-
                 <data class="skills-data" value="60">%60</data>
               </div>
-
               <div class="skills-progress-box">
                 <div class="skills-progress" style="width: 60%"></div>
               </div>
             </li>
-
             <li class="skills-item">
               <div class="wrapper" style="width: 50%">
                 <h3 class="skills-title">JavaScript</h3>
-
                 <data class="skills-data" value="50">%50</data>
               </div>
-
               <div class="skills-progress-box">
                 <div class="skills-progress" style="width: 50%"></div>
               </div>
             </li>
-
             <li class="skills-item">
               <div class="wrapper" style="width: 40%">
                 <h3 class="skills-title">C</h3>
-
                 <data class="skills-data" value="40">%40</data>
               </div>
-
               <div class="skills-progress-box">
                 <div class="skills-progress" style="width: 40%"></div>
               </div>
             </li>
-
           </ul>
-
         </div>
       </section>
 
@@ -323,6 +311,8 @@
 
       <section class="section iletisim" id="iletisim">
         <div class="container">
+
+          <p class="section-subtitle" style="margin-bottom: 20px">İletişim</p>
 
           <div class="iletisim-card">
 
@@ -370,8 +360,7 @@
 
                   <div>
                     <h3 class="iletisim-item-title">Email</h3>
-
-                    <a href="tasburak1616@gmail.com" class="iletisim-item-link">tasburak1616@gmail.com</a>
+                    <p class="iletisim-item-link">tasburak1616@gmail.com</p>
                   </div>
 
                 </li>
@@ -385,7 +374,7 @@
                   <div>
                     <h3 class="iletisim-item-title">Telefon numarası</h3>
 
-                    <a href="tel:+90555895****" class="iletisim-item-link">+90 555 895 ** **</a>
+                    <p class="iletisim-item-link">+90 555 895 ** **</p>
                   </div>
 
                 </li>
@@ -398,10 +387,6 @@
 
         </div>
       </section>
-
-
-
-
 
       <!-- - BLOG  -->
 
@@ -416,27 +401,25 @@
             Aşağıda son günlerde çıkan önemli siber olaylar yer alıyor.
           </p>
 
-          
-          
+
+
           <ul class="blog-list">
-            
+
             <li>
               <div class="blog-card">
 
                 <figure class="card-banner">
                   <a href="#">
                     <img src="webfoto7.jpg" width="1181w" height="843" loading="lazy"
-                      alt="Cyber security" class="img-cover">
+                      alt="Cyber security" class="img-cover" style="height: 211px">
                   </a>
                 </figure>
 
                 <h3 href="#" class="card-tag">Cyber Security</h3>
-
                 <h3 class="card-title">
                   <a href="#">
                     Yeni HiddenAds kötü amaçlı yazılımı 1 milyondan fazla kullanıcıyı etkiliyor ve Google Play Store'da gizleniyor.</a>
                 </h3>
-
               </div>
             </li>
 
@@ -480,7 +463,7 @@
             </li>
 
           </ul>
-           
+
 
         </div>
       </section>
@@ -492,47 +475,41 @@
 
 
 
-  <!-- 
+  <!--
     - #FOOTER
   -->
 
   <footer class="footer">
-    <div class="container">
+    <div class="container" style="display: block; text-align: center">
       <ul class="footer-list">
 
         <li class="iletisim-item">
 
-          <div class="footer-icon">
+          <div class="footer-link" style="margin-inline-end: 0px;">
             <ion-icon name="logo-github"></ion-icon>
-          </div>
-
-          <div>
             <p class="copyright">
-              &copy; 2022 <a href="https://github.com/BurakTass?tab=projects&type=new" target="_blank" class="copyright-link">github linki icin tıklayınız.          </a>
+              <a href="https://github.com/BurakTass?tab=projects&type=new" target="_blank" class="copyright-link">&copy;2023 github linki icin tıklayınız.</a>
             </p>
           </div>
 
         </li>
 
-        <li>
-          <a href="#" class="footer-link">Şartlar ve Koşullar</a>
+        <li style="padding-left: 15px">
+          <a style="padding-left: 0px;" href="#" class="footer-link">Şartlar ve Koşullar</a>
         </li>
 
         <li>
-          <a href="#" class="footer-link">Gizlilik politikası</a>
+          <a href="#" style="padding-left: 30px;" class="footer-link">Gizlilik politikası</a>
         </li>
       </ul>
 
-      
+
 
     </div>
   </footer>
 
 
-
-
-
-  <!-- 
+  <!--
     - #BACK TO TOP
   -->
 
@@ -543,6 +520,20 @@
   <script src="./assets/js/script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>function indirPDF() {
+    // PDF dosyasının URL'sini buraya ekleyin
+    var pdfURL = 'cv.pdf';
+
+    // Bir bağlantı oluşturun
+    var link = document.createElement('a');
+    link.href = pdfURL;
+
+    // Dosya adını ayarlayın (isteğe bağlı)
+    link.download = 'cv.pdf';
+
+    // Linki tıklamak için bir simülasyon yapın
+    link.click();
+}</script>
 
 </body>
 
