@@ -220,7 +220,7 @@ body {
 .rotate-img { display: none; }
 
 .hero {
-  background-image: url("hero-bg.jpg");
+  background-image: url("images/hero-bg.jpg");
   min-height: 100vh;  /* anasayfa ekran boyutunu ayarlar vh ise her ekranda bu boyutun degismemesini saglar*/
   display: grid; /* kullanılan resimlerin duzenli yerlesimini saglar */
 
